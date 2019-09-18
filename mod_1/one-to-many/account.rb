@@ -1,7 +1,7 @@
 class Account
   # Creates a reader for account_number
   # account_number instance variable cannot be changed
-  attr_reader :account_number
+  attr_reader :account_number, :bank
   # Creates a getter and setter for first_name and last_name
   attr_accessor :first_name, :last_name
 
@@ -9,11 +9,12 @@ class Account
   @@all_accounts = []
 
   # Runs on Account.new expects 3 variables
-  def initialize(account_number, first_name, last_name)
+  def initialize(account_number, first_name, last_name, bank)
       # Instance variables
       @account_number = account_number
       @first_name = first_name
       @last_name = last_name
+      @bank = bank
 
       # self is the instance that is being created
       @@all_accounts << self

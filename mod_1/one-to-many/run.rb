@@ -3,22 +3,17 @@ require_relative "bank"
 require_relative "account"
 
 chase_bank = Bank.new("Chase")
-# puts "=========== Chase Bank ==========="
-# puts chase_bank
-# puts chase_bank.name
+chase_bank.add_account(8732864539857, "Saul", "F")
 
-saul = Account.new(8732864539857, "Saul", "F")
-angel = Account.new(9349735, "Angel", "A")
-wookeun = Account.new(9349735, "Wookeun", "S")
-# puts "=========== Saul's Account ==========="
-# puts saul
-puts saul.first_name
-puts saul.account_number
+citi_bank = Bank.new("Citi")
+citi_bank.add_account(9349735, "Angel", "A")
+citi_bank.add_account(6824924397, "Wookeun", "S")
+
+
 
 # class variables
 all = Account.all_accounts
-puts "=========== All accounts ==========="
-puts all
+
 
 binding.pry
 

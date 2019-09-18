@@ -12,3 +12,9 @@ Create an Account class with account_number, first_name and last_name attibutes.
 Create an Account class variable all and the method #all that returns an array of all instances of Account.
 Add bank attribute to the Account class.
 Create an #add_account method to the Bank class.
+
+
+One to Many Relationship
+A Bank has many Accounts
+An Account belongs to a Bank
+  - An instance of an Account must display the Bank it belongs to
