@@ -1,4 +1,5 @@
 class CohortsController < ApplicationController
+
   def index
     @cohorts = Cohort.all
   end
@@ -17,7 +18,7 @@ class CohortsController < ApplicationController
     if @cohort.save
       redirect_to '/cohorts'
     else
-      render :new
+      redirect_to '/cohorts/new'
     end
   end
 
@@ -40,7 +41,7 @@ class CohortsController < ApplicationController
   end
 
   private
-
+    # Prevents client from sending 
   def cohort_params
     params.require(:cohort).permit(:name)
   end
