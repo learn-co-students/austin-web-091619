@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Events</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <div id="box">
+      <h3>Add Comment:</h3>
+      <!-- HTML form will try to post -->
+      <form id='comment-form'>
+        <div class="field">
+          <input id='new-comment' type='text' placeholder='New Comment' />
+          <!-- giving our button the type of submit will cause it to tell the form to submit -->
+          <input type='submit' class='btn' value="Submit" />
+        </div>
+      </form>
+      <h3>Comments:</h3>
+      <ol id="comments-list">
+      </ol>
+
+      <h3>Buttons That Need Functionality:</h3>
+      <div id="buttons-container">
+        <button class="btn" data-name="alert">Alert!</button>
+        <button class="btn" data-name="log">Console Log!</button>
+        <button class="btn" data-name="error">Console Error!</button>
+      </div>
+
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+
+</html>
