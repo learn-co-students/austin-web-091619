@@ -8,10 +8,10 @@ export default class PeopleList extends React.Component {
             <div className='col-sm-6'>
                 <Card style={{ width: '100%', marginTop: '30px'}}>
                     <Card.Body>
-                        <Card.Title>{this.props.firstName} {this.props.lastName}</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">{this.props.city}</Card.Subtitle>
+                        <Card.Title>First Name and Last Name</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">City</Card.Subtitle>
                         <Card.Text>
-                        {this.props.firstName}'s favoirte coffee is {this.props.favCoffee}
+                        Persons's favoirte coffee is particular coffee.
                         </Card.Text>
                     </Card.Body>
                 </Card>
