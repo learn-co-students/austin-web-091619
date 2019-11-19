@@ -12,7 +12,6 @@ export default class CoffeeForm extends React.Component {
             city: '',
             people: []
         }
-        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     // You need function(s) to handle the input change
